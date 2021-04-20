@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>pepsi</title>
+</head>
+<body>
+ <section class="sec">
+    <header>
+        <a href="#"><img src="./logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>That's What <br> <span> I like</span> </h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem a, at aperiam, consectetur ut cumqu</p>
+            <a href="products.html">View All Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="./twil-can.png" alt="001" class="pepsi">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="./1.png" alt="a" onclick="changeBgcolor('#0062be')"></li>
+        <li><img src="./2.png" alt="b" onclick="changeBgcolor('#e60c2c')"></li>
+        <li><img src="./3.png" alt="c" onclick="changeBgcolor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+ </section>
+ <script type="text/javascript"> 
+    function changeBgcolor(color){
+        const sec=document.querySelector(".sec");
+        sec.style.background=color;
+    }
+ </script>
+</body>
+</html>
